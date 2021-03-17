@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />     
+        
+        <script type="text/javascript" src="index.js"></script>
+        
+        <style>
+            body {
+                font-family: "Helvetica Neue", "Helvetica", "Arial";
+            }
+            #box {
+                border: 1px solid rgb(200, 200, 200);
+            }
+            #box__heading {
+                margin-top: 5px;
+                padding-left: 5px;
+                margin-bottom: 0px;
+                padding-right: 5px;
+                border-bottom: 1px solid rgb(200, 200, 200);
+            }
+            #box__content {
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+            #box__content.hide{
+                display: none;
+            }
+            #box__indicator{
+                float: right;
+                margin-top: 5px ;
+                width: 0px ;
+                height: 0px ;
+                border-bottom: 5px solid transparent;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-top: 5px solid black;
+
+                
+                display: block;
+            }
+            #box__indicator.hidden{
+                border-right: 5px solid black;
+                border-top: 5px solid transparent;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="box">
+            <h3 id="box__heading">
+                Das hier ist die Überschrift
+                <span id="box__indicator"></span>
+            </h3>
+            <div id="box__content">
+                Und das hier, ist der Inhalt
+            </div>
+        </div>
+        
+    </body>
+</html>
